@@ -1,5 +1,12 @@
 const input = document.querySelector('input[type="file"]')
-input.addEventListener('change',function(ex){
-  console.log(input.files)
-  const reader = new 
-}, false)
+
+
+const btn_enviar_texto = document.getElementById('btn-enviar-texto');
+const btn_escuchar = document.getElementById('btn-escuchar');
+btn_escuchar.addEventListener('click', () => {
+  if (btn_enviar_texto.style.display != 'none') {
+    btn_enviar_texto.style.display = 'none';
+  }else{
+    btn_enviar_texto.style.display = 'block';
+  }
+}, false);

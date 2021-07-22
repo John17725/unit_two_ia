@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet"> 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles_index.css">
-  <script src="js/index.js"></script>
+  
   <title>Document</title>
   <script src="https://kit.fontawesome.com/a0f9c20aeb.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="img/icon_gif.gif">
@@ -26,22 +27,36 @@
         <div class="primera-seccion">
               <div class="primera-seccion-contenido">
                   <p></p>
+                  <div class="head-boxes">
+                    <button type="button" id="btn-escuchar" class="btn btn-outline-warning">Escuchar</button>
+                  </div>
+                  <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Cargar</button>
+                    <input type="file" class="form-control" id="btn-subir-text" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                  </div>  
                   <div class="titulo-content">
                     <div class="titulo">
-                      <input type="text" size="15" maxlength="30">
-                      
+                     <div class="md-form md-outline">
+                        <textarea id="form76" class="md-textarea form-control" cols="40" rows="6"></textarea>
+                        <label for="form76">Inserte texto</label>
+                      </div>
                     </div>
-
+                    <div class="titulodos">
+                      <div class="md-form md-outline">
+                        <textarea id="form76" class="md-textarea form-control" cols="40" rows="6"></textarea>
+                        <label for="form76">Salida</label>
+                      </div>
+                    </div>
                   </div>
               </div>
-              <div class="botones">
-                <input type="submit" value="Enviar">
-                <input type="file" />
+              <div class="botones-main">
+                  <button type="button" id="btn-enviar-texto" class="btn btn-outline-success">Enviar</button>
               </div>
           </div>
         </section>
       </div>
         
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
