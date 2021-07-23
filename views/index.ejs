@@ -18,7 +18,7 @@
 <body>
    <div class="barra-navegacion">
       <a href="">
-          <p class="logo">IA</p>
+          <p class="logo">Inteligencia Artificial</p>
       </a>
     </div>
     <div class="contenedor">
@@ -31,7 +31,7 @@
                     <button type="button" id="btn-escuchar" class="btn btn-outline-warning">Escuchar</button>
                   </div>
                   <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Cargar</button>
+                    <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Cargar</button> -->
                     <input type="file" class="form-control" id="btn-subir-text" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
                   </div>  
                   <div class="titulo-content">
@@ -43,8 +43,14 @@
                     </div>
                     <div class="titulodos">
                       <div class="md-form md-outline">
-                        <textarea id="form76" class="md-textarea form-control" cols="40" rows="6"></textarea>
+                        <textarea id="text-area-salida" class="md-textarea form-control" cols="40" rows="6"></textarea>
                         <label for="form76">Salida</label>
+                        <br>
+                        <div>
+                          <label id="data-release1" style="display=none"></label>
+                          <label id="data-release2" style="display=none"></label>
+                          <label id="data-release3" style="display=none"></label>                          
+                        </div>
                       </div>
                     </div>
                   </div>
