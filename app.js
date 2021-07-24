@@ -4,9 +4,11 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const {v4:uuid} = require('uuid');
+const https = require('https');
+
 
 const app = express();
-const PORT = 3000;
+const PORT = 9090;
 
 
 
@@ -20,16 +22,6 @@ app.set('view engine', 'ejs');
 //MIDDELWARE
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
-const storage = multer.diskStorage({
-	destination: path.join(__dirname, 'public/img'),
-	filename: (req, file, cb, filename) => {
-		cb(null, uuid()+path.extname(file.originalname));
-	}
-});
-
-app.use(multer({
-	storage: storage
-}).single('image'));
 
 app.use('/', indexRoutes);
 
